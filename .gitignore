@@ -3,6 +3,11 @@
 /data_deriv/
 /results/
 
+#/scratch/users/dagnyr/brain/results/lung/gsea
+#/scratch/users/dagnyr/brain/results/choroid_plexus/gsea
+#/scratch/users/dagnyr/brain/results/cortex/gsea
+
+
 # files
 Miniconda3-latest-Linux-x86_64.s
 Miniconda3-py39_4.12.0-Linux-x86_64.sh
