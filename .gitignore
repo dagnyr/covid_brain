@@ -1,5 +1,8 @@
 # folders
 /data_raw/
 /data_deriv/
+/results/
 
 # files
+Miniconda3-latest-Linux-x86_64.s
+Miniconda3-py39_4.12.0-Linux-x86_64.sh

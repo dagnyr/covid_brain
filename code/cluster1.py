@@ -9,8 +9,8 @@ import pandas as pd
 sc.settings.verbosity = 3
 sc.settings.set_figure_params(dpi=120, facecolor="white")
 
-DATA_DIR = "."          # folder containing all the GSM files
-OUT_H5AD = "merged_processed.h5ad"
+DATA_DIR = "/scratch/users/dagnyr/brain/data_raw/choroid_plexus"          # folder containing all the GSM files
+OUT_H5AD = "choroid_merged.h5ad"
 
 # ----------- find + group samples
 files = os.listdir(DATA_DIR)
@@ -48,6 +48,7 @@ def load_sample(prefix: str, paths: dict) -> ad.AnnData:
     batch = re.sub(r"^GSM\d+_", "", prefix) # create unique batch id for each sample before merge
     adata.obs["batch"] = batch
 
+    adata.var_names_make_unique()
     return adata
 
 adatas = []
